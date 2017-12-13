@@ -2,6 +2,9 @@
 
 yum install epel-release
 yum install python-pip
+yum install gcc python-devel
+virtualenv ipython
+source ipython/bin/activate
+ipython profile create pyspark
 pip install virtualenv
 pip install ipython==5
-sed -i '1i c = get_config()'  ~/.ipython/profile_pyspark/ipython_config.py
